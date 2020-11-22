@@ -64,4 +64,4 @@ typings/
 design
 
 # ignore dist file
-src/dist
+dist
