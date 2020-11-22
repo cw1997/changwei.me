@@ -7,15 +7,23 @@ sudo: required
 #branches:
 #  - master
 #  - develop
+cache:
+  directories:
+    - node_modules
 before_install:
   - export TZ='Asia/Shanghai'  # set timezone
 install:
   - npm install
-deploy:
+before_script:
   - npm run build:all
+#before_deploy:
+script:
   - docker login -u changwei1997 -p DOCKER_HUB_PASSWORD
   - docker build . -t changwei1997/changwei.me:latest
   - docker image push changwei1997/changwei.me:latest
+#after_script:
+#  - docker login -u changwei1997 -p DOCKER_HUB_PASSWORD
+
 
 after_success:
   echo "Build OK"
