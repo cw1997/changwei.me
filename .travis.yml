@@ -18,7 +18,7 @@ install:
 before_script:
   - npm run build:all
 script:
-  - docker login -u changwei1997 -p DOCKER_HUB_PASSWORD
+  - docker login -u changwei1997 -p ${DOCKER_HUB_PASSWORD}
   - docker build . -t changwei1997/changwei.me:latest
   - docker push changwei1997/changwei.me:latest
 after_success:
