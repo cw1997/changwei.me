@@ -7,13 +7,13 @@
   "author": "cw1997",
   "license": "Apache-2.0",
   "scripts": {
-    "start": "npm run dev",
-    "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack.development.config.js",
+    "start": "npm run run:server",
+    "run:server": "node ./dist/server-index.js",
+    "dev:client": "./node_modules/.bin/webpack-dev-server --config ./webpack.development.config.js",
+    "dev:server": "npm run build:server && npm run run:server",
     "build:client": "./node_modules/.bin/webpack --config ./webpack.production.config.js",
     "build:server": "./node_modules/.bin/webpack --config ./webpack.server.config.js",
     "build:all": "npm run build:client && npm run build:server",
-    "test:server": "npm run build:server && npm run run:server",
-    "run:server": "node ./dist/server-index.js",
     "deploy": "npm run build:client && npm run build:server && npm run run:server"
   },
   "devDependencies": {
