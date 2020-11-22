@@ -3,13 +3,19 @@ services:
   - docker
 sudo: required
 branches:
-  only:
-    - master
-script:
-  - docker build . -t "changwei1997/changwei.me:latest"
-  - docker-compose -f docker-compose.yaml down
-  - docker-compose -f docker-compose.yaml up -d --force-recreate
-  - docker-compose -f docker-compose.yaml down
+  - master
+  - develop
+before_install:
+  - export TZ='Asia/Shanghai'  # set timezone
+install:
+  - npm install
+deploy:
+  - npm run build:all
+  - docker login -u changwei1997 -p DOCKER_HUB_PASSWORD
+  - docker build . -t changwei1997/changwei.me:latest
+  - docker image push changwei1997/changwei.me:latest
 
 after_success:
-  - docker login --username=changwei1997 -p="password" dockerhub
+  echo "Build OK"
+#  - docker-compose -f docker-compose.yaml down
+#  - docker-compose -f docker-compose.yaml up -d --force-recreate
