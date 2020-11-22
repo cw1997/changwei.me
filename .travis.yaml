@@ -1,0 +1,15 @@
+language: bash
+services:
+  - docker
+sudo: required
+branches:
+  only:
+    - master
+script:
+  - docker build . -t "changwei1997/changwei.me:latest"
+  - docker-compose -f docker-compose.yaml down
+  - docker-compose -f docker-compose.yaml up -d --force-recreate
+  - docker-compose -f docker-compose.yaml down
+
+after_success:
+  - docker login --username=changwei1997 -p="password" dockerhub

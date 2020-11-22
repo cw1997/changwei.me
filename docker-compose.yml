@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  homepage:
+    container_name: changwei.me
+    image: changwei1997/changwei.me:latest
+    build:
+      context: .
+#      network: host
+#      target: prod
+    ports:
+      - "30001:30001"
