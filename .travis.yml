@@ -1,10 +1,12 @@
 language: node_js
+node_js:
+  - '14'
 services:
   - docker
 sudo: required
-branches:
-  - master
-  - develop
+#branches:
+#  - master
+#  - develop
 before_install:
   - export TZ='Asia/Shanghai'  # set timezone
 install:
