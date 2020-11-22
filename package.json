@@ -11,6 +11,7 @@
     "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack.development.config.js",
     "build:client": "./node_modules/.bin/webpack --config ./webpack.production.config.js",
     "build:server": "./node_modules/.bin/webpack --config ./webpack.server.config.js",
+    "build:all": "npm run build:client && npm run build:server",
     "test:server": "npm run build:server && npm run run:server",
     "run:server": "node ./dist/server-index.js",
     "deploy": "npm run build:client && npm run build:server && npm run run:server"
