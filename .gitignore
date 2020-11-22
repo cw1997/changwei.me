@@ -59,3 +59,9 @@ typings/
 
 # next.js build output
 .next
+
+# ignore design and material file
+design
+
+# ignore dist file
+src/dist
