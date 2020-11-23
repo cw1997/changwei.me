@@ -2,5 +2,6 @@
 script:
   - docker build . -t changwei1997/changwei.me:latest
   - docker push changwei1997/changwei.me:latest
-  - rsync -av --delete ./docker-compose.yml root@${QCLOUD_SERVER_HOST}:/root/docker/www.changwei.me
+  - ssh root@${QCLOUD_SERVER_HOST} 'mkdir -p /root/docker/www.changwei.me'
+  - rsync -avr --delete ./docker-compose.yml root@${QCLOUD_SERVER_HOST}:/root/docker/www.changwei.me
   - ssh root@${QCLOUD_SERVER_HOST} 'docker-compose down && docker-compose up -d --force-recreate'
