@@ -17,6 +17,7 @@ before_install:
 - chmod 600 /tmp/qcloud.pem
 - eval `ssh-agent -s`
 - ssh-add /tmp/qcloud.pem
+- ssh-keyscan ${QCLOUD_SERVER_HOST} >> ~/.ssh/known_hosts
 - export TZ='Asia/Shanghai'
 install:
 - npm install
