@@ -29,7 +29,7 @@ before_script:
 import:
   - source: .travis/master.yml
     if: branch = master
-  - source: .travis/other.yml
+  - source: .travis/develop.yml
     if: branch != master
 
 after_success:
