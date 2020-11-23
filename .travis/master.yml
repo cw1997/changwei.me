@@ -2,5 +2,4 @@
 script:
   - docker build . -t changwei1997/changwei.me:latest
   - docker push changwei1997/changwei.me:latest
-  - docker-compose down
-  - docker-compose up -d --force-recreate
+  - ssh root@${QCLOUD_SERVER_HOST} 'mkdir -p /root/docker/www.changwei.me && docker-compose down && docker-compose up -d --force-recreate'
