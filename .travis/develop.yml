@@ -4,6 +4,4 @@ script:
   - docker push changwei1997/changwei.me:dev
   - ssh ${SERVER_USER}@${SERVER_HOST} 'sudo mkdir -m 775 -p /root/docker/dev.www.changwei.me'
   - rsync -av --delete ./docker-compose.yml ${SERVER_USER}@${SERVER_HOST}:/root/docker/dev.www.changwei.me/
-  - ssh ${SERVER_USER}@${SERVER_HOST} 'cd /root/docker/dev.www.changwei.me && 
-  docker-compose down && 
-  docker-compose up -d --force-recreate -f docker-compose-develop.yml'
+  - ssh ${SERVER_USER}@${SERVER_HOST} 'cd /root/docker/dev.www.changwei.me && docker-compose down && docker-compose up -d --force-recreate -f docker-compose-develop.yml'
