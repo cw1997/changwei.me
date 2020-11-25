@@ -6,3 +6,5 @@ services:
     image: changwei1997/changwei.me:latest
     ports:
       - "30001:30001"
+    networks:
+      - nginx_bridge

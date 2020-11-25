@@ -1,8 +1,10 @@
 version: '3'
 
 services:
-  homepage:
+  homepage_dev:
     container_name: changwei-homepage-dev
     image: changwei1997/changwei.me:dev
     ports:
       - "30001:30001"
+    networks:
+      - nginx_bridge
