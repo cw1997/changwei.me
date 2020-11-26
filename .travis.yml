@@ -2,11 +2,12 @@
 #  - DEPLOY_PATH="/root/docker"
 
 language: node_js
+os: linux
+dist: xenial
 node_js:
 - '14'
 services:
 - docker
-sudo: required
 branches:
   only:
   - master
