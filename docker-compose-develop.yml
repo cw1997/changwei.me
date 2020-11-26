@@ -8,3 +8,6 @@ services:
       - "30001:30001"
     networks:
       - nginx_bridge
+networks:
+  nginx_bridge:
+    external: true
