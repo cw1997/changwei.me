@@ -4,8 +4,6 @@ services:
   homepage:
     container_name: changwei-homepage
     image: changwei1997/changwei.me:latest
-    ports:
-      - "30001:30001"
     networks:
       - nginx_bridge
 networks:
