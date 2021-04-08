@@ -15,6 +15,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.mjs'],
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+      '@pages': path.resolve(__dirname, 'src', 'pages'),
+    }
   },
   module: {
     rules: [

@@ -75,7 +75,20 @@ module.exports = webpackMerge(webpackCommonConfig, {
         }, {
           loader: 'css-loader',
         }, {
-          loader: 'sass-loader'
+          loader: 'sass-loader',
+            // options: { sourceMap: true }
+        },],
+        exclude: '/node_modules/',
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        use: [{
+          loader: 'url-loader',
+          options: {
+            //1024 == 1kb, pack to base64 inline url if size <- 10240 bytes
+            limit: 10240,
+            name: path.join(`${fileName}.[ext]`)
+          },
         },],
         exclude: '/node_modules/',
       },
