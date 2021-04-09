@@ -76,7 +76,7 @@ export default function Home(props: IPropsHome) {
       <hr/>
       <footer>
         <p>
-          Circle CI build status: <a href="https://circleci.com/gh/cw1997/changwei.me"><img src="https://circleci.com/gh/cw1997/changwei.me.svg?style=svg&style=shield" /></a>
+          Circle CI build status: <a href="https://circleci.com/gh/cw1997/changwei.me"><img src="https://circleci.com/gh/cw1997/changwei.me.svg?style=shield" /></a>
         </p>
         <p>
           Source Code: <a href="https://github.com/cw1997/changwei.me">https://github.com/cw1997/changwei.me</a>
