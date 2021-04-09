@@ -17,7 +17,7 @@ export default function Home(props: IPropsHome) {
       </header>
       <hr/>
       <p>
-        <h2>简介(Introduction)</h2>
+        <h2>简介 (Introduction)</h2>
         全栈开发者，泛语言开发者。
         职业方向为WEB前端开发，业余爱好为嵌入式开发。
         希望能够为计算机科学与技术相关知识的科普做出微小的贡献。
@@ -65,7 +65,7 @@ export default function Home(props: IPropsHome) {
               <td>2020.10 ~ 2021.3</td><td><a href="https://pingcap.com">PingCAP</a> (北京平凯星辰科技发展有限公司)</td><td>WEB Front-End (WEB前端开发)</td><td>intern (实习)</td>
             </tr>
             <tr>
-              <td>2018.9 ~ 至今</td><td><a href="https://www.ntust.edu.tw/">NTUST</a> (台湾科技大学)</td><td>ElectriC Engineering (ECE) (电子工程)</td><td>full-time undergraduate (全日制本科)</td>
+              <td>2018.9 ~ 至今</td><td><a href="https://www.ntust.edu.tw/">NTUST</a> (台湾科技大学)</td><td>Electric Engineering (电子工程)</td><td>full-time undergraduate (全日制本科)</td>
             </tr>
             <tr>
               <td>2015.9 ~ 2018.9</td><td><a href="http://www.wspc.edu.cn/">WSPC</a> (武汉船舶职业技术学院)</td><td>Software Technology (软件技术)</td><td>full-time college (全日制专科)</td>
@@ -76,13 +76,16 @@ export default function Home(props: IPropsHome) {
       <hr/>
       <footer>
         <p>
+          Circle CI build status: <img src="https://circleci.com/gh/pingcap/tug-website" />
+        </p>
+        <p>
           Source Code: <a href="https://github.com/cw1997/changwei.me">https://github.com/cw1997/changwei.me</a>
         </p>
         <p>
           Docker image: <a href="https://hub.docker.com/r/changwei1997/changwei.me">https://hub.docker.com/r/changwei1997/changwei.me</a>
         </p>
         <p>
-          Powered by React.js, SSR by React-DOM-Server & koa2, running at CentOS with Docker.
+          Powered by React.js & TypeScript & sass & Webpack, SSR (Server Side Rendering) by React-DOM-Server & koa2, running at CentOS with nginx in Docker, build on CircleCI.
         </p>
         <p>
           Copyright 2020 - 2021 cw1997. Last Update DateTime: Fri Apr 09 2021 18:32:19 GMT+0800 (中国标准时间)
