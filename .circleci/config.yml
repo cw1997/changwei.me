@@ -3,9 +3,9 @@ version: 2.1
 commands:
   install-deps:
     steps:
-      - setup_remote_docker:
-          version: 19.03.13
-          docker_layer_caching: true
+      # - setup_remote_docker:
+      #     version: 19.03.13
+      #     docker_layer_caching: true
       - checkout
       - run: sudo apt-get update && sudo apt-get install rsync
       - restore_cache:
@@ -92,8 +92,10 @@ workflows:
             branches:
               ignore:
                 - master
+                - circleci-project-setup
       - deploy:
           filters:
             branches:
               only:
                 - master
+                - circleci-project-setup
