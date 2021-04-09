@@ -3,6 +3,9 @@ version: 2.1
 commands:
   install-deps:
     steps:
+      - setup_remote_docker:
+          version: 19.03.13
+          docker_layer_caching: true
       - checkout
       - run: sudo apt-get update && sudo apt-get install rsync
       - restore_cache:
@@ -39,10 +42,10 @@ commands:
       #       curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
       #       sudo apt-get update && sudo apt-get install docker-ce docker-ce-cli containerd.io
       #     no_output_timeout: 15m
-      - run:
-          name: docker login
-          command: docker login --username changwei1997 --password ${DOCKER_HUB_PASSWORD}
-          no_output_timeout: 15m
+      # - run:
+      #     name: docker login
+      #     command: docker login --username changwei1997 --password ${DOCKER_HUB_PASSWORD}
+      #     no_output_timeout: 15m
       - run:
           name: docker build
           command: docker build . -t changwei1997/changwei.me:latest
@@ -72,6 +75,9 @@ jobs:
   deploy:
     docker:
       - image: circleci/node:14.13.0
+        auth:
+          username: changwei1997
+          password: ${DOCKER_HUB_PASSWORD}
     steps:
       - install-deps
       - build-app
