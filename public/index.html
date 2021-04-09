@@ -25,6 +25,34 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <!-- cnzz -->
+    <!-- dont use script ith icon at head tag -->
+    <!--    <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1256444720'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1256444720%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>-->
+    <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1256444720'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1256444720' type='text/javascript'%3E%3C/script%3E"));</script>
+
+    <!-- baidu tongji -->
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?63e92daf130caff351fccb6cb398e25b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+
+    <!-- google analysis -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GPVC7Z21XH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GPVC7Z21XH');
+    </script>
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
