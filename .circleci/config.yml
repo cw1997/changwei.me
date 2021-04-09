@@ -76,9 +76,9 @@ workflows:
           filters:
             branches:
               ignore:
-                - main
+                - master
       - deploy:
           filters:
             branches:
               only:
-                - main
+                - master
