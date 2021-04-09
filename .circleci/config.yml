@@ -30,7 +30,7 @@ commands:
 
   build-docker:
     steps:
-    - run:
+      - run:
           name: docker install
           command: |          
             sudo apt-get remove docker docker-engine docker.io containerd runc
