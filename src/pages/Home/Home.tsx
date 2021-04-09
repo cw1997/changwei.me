@@ -43,6 +43,18 @@ export default function Home(props: IPropsHome) {
         </ul>
       </p>
       <p>
+        <h2>联系方式 (Contact)</h2>
+        <ul>
+          <li>Github: <a href="https://github.com/cw1997">https://github.com/cw1997</a></li>
+          <li>ZhiHu: <a href="https://www.zhihu.com/people/changwei1006/posts">https://www.zhihu.com/people/changwei1006/posts</a></li>
+          <li>Weibo: <a href="https://weibo.com/changweicw">https://weibo.com/changweicw</a></li>
+          <li>SegmentFault: <a href="https://segmentfault.com/u/changwei">https://segmentfault.com/u/changwei</a></li>
+
+          <li>QQ: 867597730</li>
+          <li>WeChat: changwei1006</li>
+        </ul>
+      </p>
+      <p>
         <table border="1" cellspacing="0">
           <caption>Experience (个人经历)</caption>
           <thead>
@@ -60,18 +72,6 @@ export default function Home(props: IPropsHome) {
             </tr>
           </thead>
         </table>
-      </p>
-      <p>
-        <h2>联系方式(Contact)</h2>
-        <ul>
-          <li>Github: <a href="https://github.com/cw1997">https://github.com/cw1997</a></li>
-          <li>ZhiHu: <a href="https://www.zhihu.com/people/changwei1006/posts">https://www.zhihu.com/people/changwei1006/posts</a></li>
-          <li>Weibo: <a href="https://weibo.com/changweicw">https://weibo.com/changweicw</a></li>
-          <li>SegmentFault: <a href="https://segmentfault.com/u/changwei">https://segmentfault.com/u/changwei</a></li>
-
-          <li>QQ: 867597730</li>
-          <li>WeChat: changwei1006</li>
-        </ul>
       </p>
       <hr/>
       <footer>
