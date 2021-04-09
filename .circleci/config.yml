@@ -32,7 +32,7 @@ commands:
     steps:
       - run:
           name: docker login
-          command: docker login 
+          command: docker login --username changwei1997 --password ${DOCKER_HUB_PASSWORD}
           no_output_timeout: 15m
       - run:
           name: docker build
