@@ -4,7 +4,7 @@ commands:
   install-deps:
     steps:
       - checkout
-      - run: sudo apt update && sudo apt install rsync sshpass
+      - run: sudo apt update && sudo apt install rsync
       - restore_cache:
           keys:
             - v1-deps-{{ checksum "package-lock.json" }}
