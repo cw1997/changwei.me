@@ -114,7 +114,7 @@ export default function Home(props: IPropsHome) {
           and create a pull request.
         </p>
         <div className="friendly-link">
-          {friendlyLink.map(item => <a href={item.url}>{item.name}</a>)}
+          {friendlyLink.map(item => <a href={item.url} target="_blank">{item.name}</a>)}
         </div>
       </p>
 
