@@ -19,7 +19,7 @@ export default function Home(props: IPropsHome) {
       <hr/>
 
       <p>
-        <h2>简介 (Introduction)</h2>
+        <h2>Introduction (简介)</h2>
         姓名：昌维，生日（公历）：1997 / 10 / 6。
         全栈开发者，泛语言开发者。
         职业方向为 WEB 前端开发，业余爱好为嵌入式开发。
@@ -62,7 +62,7 @@ export default function Home(props: IPropsHome) {
       </p>
 
       <p>
-        <h2>联系方式 (Contact)</h2>
+        <h2>Contact (联系方式)</h2>
         <ul>
           <li>Github: <a href="https://github.com/cw1997">https://github.com/cw1997</a></li>
           <li>ZhiHu: <a href="https://www.zhihu.com/people/changwei1006/posts">https://www.zhihu.com/people/changwei1006/posts</a></li>
