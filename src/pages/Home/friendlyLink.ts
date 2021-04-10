@@ -15,6 +15,7 @@ const friendlyLink: IFriendlyLinkItem[] = [
   {name: `小青青的秘密基地`, url: `http://largeq.cn/`},
   {name: `Leo's Blog`, url: `https://freeleox.github.io/`},
   {name: `Cytosineの有被小窝~`, url: `https://cyto.top/`},
+  {name: `小狐素涵`, url: `http://lolitaice.com`},
 ]
 
 export default friendlyLink
