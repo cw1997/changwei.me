@@ -20,15 +20,18 @@ export default function Home(props: IPropsHome) {
 
       <p>
         <h2>Introduction (简介)</h2>
-        姓名：昌维，生日（公历）：1997 / 10 / 6。
-        全栈开发者，泛语言开发者。
-        职业方向为 WEB 前端开发，业余爱好为嵌入式开发。
-        希望能够为计算机科学与技术相关知识的科普做出微小的贡献。
-        <br/>
-        My name is Chang Wei, born on October 6, 1997.
-        Full stack developer, pan-language developer.
-        working for Web front-end development, hobby for embedded development.
-        I hope to make a contribution to the popularization of computer science and electronic.
+        <p>
+          姓名：昌维，生日（公历）：1997 / 10 / 6。
+          全栈开发者，泛语言开发者。
+          职业方向为 WEB 前端开发，业余爱好为嵌入式开发。
+          希望能够为计算机科学与技术相关知识的科普做出微小的贡献。
+        </p>
+        <p>
+          My name is Chang Wei, born on October 6, 1997.
+          Full stack developer, pan-language developer.
+          working for Web front-end development, hobby for embedded development.
+          I hope to make a contribution to the popularization of computer science and electronic.
+        </p>
       </p>
 
       <p>
