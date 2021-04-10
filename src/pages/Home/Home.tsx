@@ -100,6 +100,16 @@ export default function Home(props: IPropsHome) {
 
       <p>
         <h2>Friendly Link (友情链接)</h2>
+        <p>
+          申请友情链接，<a href="mailto:867597730@qq.com">请发送 Email 给我</a>，或将该项目 fork 到你自己的 GitHub 帐号后，修改
+          &nbsp;<a href="https://github.com/cw1997/changwei.me/blob/master/src/pages/Home/friendlyLink.ts">src/pages/Home/friendlyLink.ts</a>&nbsp;
+          并且提 pull request。
+        </p>
+        <p>
+          To apply for a Friendly Link, <a href="mailto:changwei1006@gmail.com">please send Email to me</a>, or fork this repo, then edit this file:
+          &nbsp;<a href="https://github.com/cw1997/changwei.me/blob/master/src/pages/Home/friendlyLink.ts">src/pages/Home/friendlyLink.ts</a>&nbsp;
+          and create a pull request.
+        </p>
         <div className="friendly-link">
           {friendlyLink.map(item => <a href={item.url}>{item.name}</a>)}
         </div>
