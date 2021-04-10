@@ -9,6 +9,7 @@ const friendlyLink: IFriendlyLinkItem[] = [
   {name: `zhangguanzhang's Blog`, url: `https://zhangguanzhang.github.io/`},
   {name: `猫叔's Blog`, url: `https://www.vicicode.com/`},
   {name: `Ah!'s Blog`, url: `https://blog.forgiveher.cn/`},
+  {name: `Hank Learning`, url: `https://blog.hanklu.tw/`},
   {name: `劣質文章農場`, url: `https://blog.splitline.tw/`},
   {name: `小青青的秘密基地`, url: `http://largeq.cn/`},
   {name: `Leo's Blog`, url: `https://freeleox.github.io/`},
