@@ -136,6 +136,9 @@ export default function Home(props: IPropsHome) {
         <p>
           Copyright 2020 - 2021 cw1997. Last Update DateTime: Sat Apr 10 2021 16:45:09 GMT+0800 (中国标准时间)
         </p>
+        <p>
+          <a href="https://beian.miit.gov.cn/">赣ICP备15009162号-1</a>
+        </p>
       </footer>
     </div>
   )
