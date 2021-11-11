@@ -41,7 +41,7 @@ jobs:
       uses: garygrossgarten/github-action-ssh@v0.6.3
       with:
         command: |
-          mkdir -p /home/ubuntu/docker/changwei-homepage
+          mkdir -p /home/${{ secrets.QCLOUD_USER }}/docker/changwei-homepage
         host: ${{ secrets.QCLOUD_HOST }}
         username: ${{ secrets.QCLOUD_USER }}
         privateKey: ${{ secrets.QCLOUD_PRIVATE_KEY }}
@@ -51,7 +51,7 @@ jobs:
       with:
         switches: -avzr --delete
         path: ./docker-compose.yml
-        remote_path: /home/ubuntu/docker/changwei-homepage/docker-compose.yml
+        remote_path: /home/${{ secrets.QCLOUD_USER }}/docker/changwei-homepage/docker-compose.yml
         remote_host: ${{ secrets.QCLOUD_HOST }}
         remote_user: ${{ secrets.QCLOUD_USER }}
         remote_key: ${{ secrets.QCLOUD_PRIVATE_KEY }}
@@ -64,7 +64,7 @@ jobs:
       uses: garygrossgarten/github-action-ssh@v0.6.3
       with:
         command: |
-          cd /home/ubuntu/docker/changwei-homepage && sudo docker-compose down --rmi all && sudo docker-compose up -d --force-recreate
+          cd /home/${{ secrets.QCLOUD_USER }}/docker/changwei-homepage && sudo docker-compose down --rmi all && sudo docker-compose up -d --force-recreate
         host: ${{ secrets.QCLOUD_HOST }}
         username: ${{ secrets.QCLOUD_USER }}
         privateKey: ${{ secrets.QCLOUD_PRIVATE_KEY }}
