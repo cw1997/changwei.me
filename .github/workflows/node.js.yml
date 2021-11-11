@@ -34,7 +34,7 @@ jobs:
         docker push changwei1997/changwei-homepage:latest
 
   copy-docker-compose-file:
-    needs: build-docker-image
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - name: create directory
