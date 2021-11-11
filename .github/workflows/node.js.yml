@@ -1,0 +1,76 @@
+# This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-client-and-server:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build:client
+    - run: npm run build:server
+
+  build-docker-image:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: build docker image and push to docker hub
+      run: |
+        docker build . --file Dockerfile --tag changwei-homepage:latest
+        docker login --username changwei1997 --password ${{ secrets.DOCKER_HUB_PASSWORD }}
+        docker tag changwei-nginx:latest changwei1997/changwei-homepage:latest
+        docker push changwei1997/changwei-homepage:latest
+      
+  copy-docker-compose-file:
+    needs: build-docker-image
+    runs-on: ubuntu-latest
+    steps:
+    - name: create directory
+      uses: garygrossgarten/github-action-ssh@v0.6.3
+      with:
+        command: |
+          mkdir -p /home/ubuntu/docker/changwei-homepage
+        host: ${{ secrets.QCLOUD_HOST }}
+        username: ${{ secrets.QCLOUD_USER }}
+        privateKey: ${{ secrets.QCLOUD_PRIVATE_KEY }}
+    - uses: actions/checkout@v2
+    - name: rsync docker-compose.yml to production server
+      uses: Burnett01/rsync-deployments@5.1
+      with:
+        switches: -avzr --delete
+        path: ./docker-compose.yml
+        remote_path: /home/ubuntu/docker/changwei-homepage/docker-compose.yml
+        remote_host: ${{ secrets.QCLOUD_HOST }}
+        remote_user: ${{ secrets.QCLOUD_USER }}
+        remote_key: ${{ secrets.QCLOUD_PRIVATE_KEY }}
+
+  deploy-to-production-environment:
+    needs: copy-docker-compose-file
+    runs-on: ubuntu-latest
+    steps:
+    - name: run deploy command
+      uses: garygrossgarten/github-action-ssh@v0.6.3
+      with:
+        command: |
+          cd /home/ubuntu/docker/changwei-homepage && docker-compose down --rmi all && docker-compose up -d --force-recreate
+        host: ${{ secrets.QCLOUD_HOST }}
+        username: ${{ secrets.QCLOUD_USER }}
+        privateKey: ${{ secrets.QCLOUD_PRIVATE_KEY }}
