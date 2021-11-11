@@ -3,7 +3,7 @@ version: '3'
 services:
   homepage:
     container_name: changwei-homepage
-    image: changwei1997/changwei.me:latest
+    image: changwei1997/changwei-homepage:latest
     networks:
       - nginx_bridge
 networks:

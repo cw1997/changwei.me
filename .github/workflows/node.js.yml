@@ -30,7 +30,7 @@ jobs:
       run: |
         docker build . --file Dockerfile --tag changwei-homepage:latest
         docker login --username changwei1997 --password ${{ secrets.DOCKER_HUB_PASSWORD }}
-        docker tag changwei-nginx:latest changwei1997/changwei-homepage:latest
+        docker tag changwei-homepage:latest changwei1997/changwei-homepage:latest
         docker push changwei1997/changwei-homepage:latest
 
   copy-docker-compose-file:
@@ -64,7 +64,7 @@ jobs:
       uses: garygrossgarten/github-action-ssh@v0.6.3
       with:
         command: |
-          cd /home/ubuntu/docker/changwei-homepage && docker-compose down --rmi all && docker-compose up -d --force-recreate
+          cd /home/ubuntu/docker/changwei-homepage && sudo docker-compose down --rmi all && sudo docker-compose up -d --force-recreate
         host: ${{ secrets.QCLOUD_HOST }}
         username: ${{ secrets.QCLOUD_USER }}
         privateKey: ${{ secrets.QCLOUD_PRIVATE_KEY }}
