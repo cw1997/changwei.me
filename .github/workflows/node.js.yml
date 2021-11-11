@@ -10,7 +10,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build-client-and-server:
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -26,19 +26,13 @@ jobs:
     - run: npm ci
     - run: npm run build:client
     - run: npm run build:server
-
-  build-docker-image:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
     - name: build docker image and push to docker hub
       run: |
         docker build . --file Dockerfile --tag changwei-homepage:latest
         docker login --username changwei1997 --password ${{ secrets.DOCKER_HUB_PASSWORD }}
         docker tag changwei-nginx:latest changwei1997/changwei-homepage:latest
         docker push changwei1997/changwei-homepage:latest
-      
+
   copy-docker-compose-file:
     needs: build-docker-image
     runs-on: ubuntu-latest
