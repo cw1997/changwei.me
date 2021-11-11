@@ -65,3 +65,4 @@ design
 
 # ignore dist file
 dist
+.idea/
