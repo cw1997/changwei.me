@@ -8,11 +8,7 @@ module.exports = {
   entry: [
     "babel-polyfill",
   ],
-  node: {
-    fs: 'empty',
-    net:'empty',
-    tls:'empty',
-  },
+  node: false,
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.mjs'],
     alias: {
@@ -20,6 +16,7 @@ module.exports = {
       '@pages': path.resolve(__dirname, 'src', 'pages'),
     }
   },
+  devtool: 'eval-source-map',
   module: {
     rules: [
       {

@@ -1,6 +1,6 @@
 const path = require('path')
 
-const webpackMerge = require("webpack-merge")
+const {merge: webpackMerge} = require("webpack-merge")
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
@@ -23,9 +23,6 @@ module.exports = webpackMerge(webpackCommonConfig, {
     // publicPath: 'https://cdn.example.com/assets/[hash]/',
   },
   mode: 'production',
-  // TODO: set to cheap-module-source-map on prod env
-  // devtool: 'cheap-module-eval-source-map',
-  devtool: 'cheap-module-source-map',
   // devtool: 'eval', // 'eval' is not supported by error-overlay-webpack-plugin
   plugins: [
     new HtmlWebpackPlugin({

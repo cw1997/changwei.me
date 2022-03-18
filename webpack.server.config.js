@@ -1,6 +1,6 @@
 const path = require('path')
 
-const webpackMerge = require("webpack-merge");
+const {merge: webpackMerge} = require("webpack-merge");
 
 const webpackCommonConfig = require('./webpack.common.config')
 
@@ -20,7 +20,6 @@ module.exports = webpackMerge(webpackCommonConfig, {
     libraryTarget: 'commonjs2',
   },
   mode: 'development',
-  devtool: 'cheap-module-eval-source-map',
   // devtool: 'eval', // 'eval' is not supported by error-overlay-webpack-plugin
   plugins: [],
   // exclude: './public',
