@@ -138,9 +138,9 @@ export default function Home(props: IPropsHome) {
         <p>
           GitHub Actions build status: <a href="https://github.com/cw1997/changwei.me/actions/workflows/node.js.yml"><img src="https://github.com/cw1997/changwei.me/actions/workflows/node.js.yml/badge.svg" /></a>
         </p>
-        <p>
-          Circle CI build status: <a href="https://circleci.com/gh/cw1997/changwei.me"><img src="https://circleci.com/gh/cw1997/changwei.me.svg?style=shield" /></a>
-        </p>
+        {/*<p>*/}
+        {/*  Circle CI build status: <a href="https://circleci.com/gh/cw1997/changwei.me"><img src="https://circleci.com/gh/cw1997/changwei.me.svg?style=shield" /></a>*/}
+        {/*</p>*/}
         <p>
           Source Code: <a href="https://github.com/cw1997/changwei.me">https://github.com/cw1997/changwei.me</a>
         </p>
