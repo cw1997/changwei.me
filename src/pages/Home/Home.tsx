@@ -40,6 +40,13 @@ export default function Home(props: IPropsHome) {
         <p>
           <h3>ECE (ElectroniC Engineering)</h3>
           <ul>
+            <li>
+              开源 CPU 开发，业余开发 <a href="https://github.com/OpenX86">OpenX86</a> 项目，
+              目标为逆向 Intel P6 架构并使用 SystemVerilog 编写对应之 RTL 电路，并且能够在 FPGA 开发板上验证成功。
+              目前进度为 已将 IA-32 基础指令集 的译码器编码完成。还有较多模块待完成。
+              （对该项目有兴趣者，欢迎使用本页面上述的联系方式与我取得联系，建议满足 (0 基础 && 初中以上学历 && 对 CPU 研发有兴趣) 之条件者参与）
+            </li>
+            <li>嵌入式单片机开发，包括 STM32，MSC-51，ESP8266(NodeMCU) 等平台。</li>
             <li>嵌入式单片机开发，包括 STM32，MSC-51，ESP8266(NodeMCU) 等平台。</li>
             <li>Embedded development, including STM32，MSC-51，ESP8266(NodeMCU) and more platform.</li>
             <li>FPGA 开发，包括部分外设控制器的驱动模块开发，RISC-V 和 X86 等指令集的 CPU 软核开发</li>
@@ -86,16 +93,23 @@ export default function Home(props: IPropsHome) {
           {/*<caption>Experience (个人经历)</caption>*/}
           <thead>
             <tr>
-              <th>Date (时间)</th><th>Organization (组织机构)</th><th>Position (职位方向)</th><th>Nature (性质)</th>
+              <th>Date (时间)</th><th>Organization (组织机构)</th><th>Position (职位方向)</th><th>Nature (性质)</th><th>Duty (方向与职责)</th>
             </tr>
             <tr>
-              <td>2020.10 ~ 2021.3</td><td><a href="https://pingcap.com">PingCAP</a> (北京平凯星辰科技发展有限公司)</td><td>WEB Front-End (WEB前端开发)</td><td>intern (实习)</td>
+              <td>2018.9 ~ 至今</td><td><a href="https://www.ntust.edu.tw/">NTUST</a> (台湾科技大学)</td><td>Electronic Engineering (电子工程)</td><td>full-time master (全日制硕士)</td>
+              <td>台科大电子研究所乙 1 组，研究 telecommunication 移动通信，Free5GC 核心网</td>
+            </tr>
+            <tr>
+              <td>2020.10 ~ 2022</td><td><a href="https://pingcap.com">PingCAP</a> (北京平凯星辰科技发展有限公司)</td><td>WEB Front-End (WEB前端开发)</td><td>intern (实习)</td>
+              <td>负责 <a href="https://pingcap.com/zh">PingCAP 中文官网</a> 和 <a href="https://tidb.io">TiDB 社区</a> 开发</td>
             </tr>
             <tr>
               <td>2018.9 ~ 至今</td><td><a href="https://www.ntust.edu.tw/">NTUST</a> (台湾科技大学)</td><td>Electronic Engineering (电子工程)</td><td>full-time undergraduate (全日制本科)</td>
+              <td>毕业设计为 <a href="https://github.com/risc-v-cpu">RISC-V 指令集架构的 CPU 软核设计</a></td>
             </tr>
             <tr>
               <td>2015.9 ~ 2018.9</td><td><a href="http://www.wspc.edu.cn/">WSPC</a> (武汉船舶职业技术学院)</td><td>Software Technology (软件技术)</td><td>full-time college (全日制专科)</td>
+              <td>Web 全栈开发</td>
             </tr>
           </thead>
         </table>
