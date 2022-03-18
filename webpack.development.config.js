@@ -1,6 +1,6 @@
 const path = require('path')
 
-const webpackMerge = require("webpack-merge")
+const {merge: webpackMerge} = require("webpack-merge")
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
@@ -23,20 +23,16 @@ module.exports = webpackMerge(webpackCommonConfig, {
     // libraryTarget: 'umd',
   },
   mode: "development",
-  devtool: 'cheap-module-eval-source-map',
   // devtool: 'eval', // 'eval' is not supported by error-overlay-webpack-plugin
   devServer: {
-    contentBase: "./dist",
     host: "127.0.0.1",
     port: 30000,
     historyApiFallback: true,
-    overlay: {
-      errors: true
-    },
     open: false,
-    inline: true,
     hot: true,
     compress: false,
+    http2: true,
+    https: false,
   },
   plugins: [
     new HtmlWebpackPlugin({
