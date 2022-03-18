@@ -23,11 +23,19 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: node -v
-    - run: npm -v
-    - run: npm ci
-    - run: npm run build:client
-    - run: npm run build:server
+    - name: check node.js environment version
+      run: |
+        node -v
+        npm -v
+    - name: install npm packages and freeze version
+      run: |
+        npm ci
+    - name: build client
+      run: |
+        npm run build:client
+    - name: build server
+      run: |
+        npm run build:server
     - name: build docker image and push to docker hub
       run: |
         docker build . --file Dockerfile --tag changwei-homepage:latest
