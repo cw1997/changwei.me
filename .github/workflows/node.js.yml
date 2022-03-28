@@ -30,7 +30,7 @@ jobs:
         node -v
         npm -v
 
-    - name: install npm packages and freeze version
+    - name: install npm packages with freeze version option
       run: |
         npm ci
 
