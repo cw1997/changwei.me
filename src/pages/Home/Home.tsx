@@ -38,7 +38,7 @@ export default function Home(props: IPropsHome) {
         <h2>Major Research Direction (主要研究方向)</h2>
 
         <p>
-          <h3>ECE (ElectroniC Engineering)</h3>
+          <h3>ECE (Electronic Engineering)</h3>
           <ul>
             <li>
               开源 CPU 开发，业余开发 <a href="https://github.com/OpenX86">OpenX86</a> 项目，
@@ -46,7 +46,6 @@ export default function Home(props: IPropsHome) {
               目前进度为 已将 IA-32 基础指令集 的译码器编码完成。还有较多模块待完成。
               （对该项目有兴趣者，欢迎使用本页面上述的联系方式与我取得联系，建议满足 (0 基础 && 初中以上学历 && 对 CPU 研发有兴趣) 之条件者参与）
             </li>
-            <li>嵌入式单片机开发，包括 STM32，MSC-51，ESP8266(NodeMCU) 等平台。</li>
             <li>嵌入式单片机开发，包括 STM32，MSC-51，ESP8266(NodeMCU) 等平台。</li>
             <li>Embedded development, including STM32，MSC-51，ESP8266(NodeMCU) and more platform.</li>
             <li>FPGA 开发，包括部分外设控制器的驱动模块开发，RISC-V 和 X86 等指令集的 CPU 软核开发</li>

@@ -17,8 +17,8 @@
     "deploy": "npm run build:client && npm run build:server && npm run run:server"
   },
   "engines": {
-    "node": "16.14.0",
-    "npm": "8.3.1"
+    "node": "16.15.1",
+    "npm": "8.11.0"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
