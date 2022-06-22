@@ -88,7 +88,7 @@ export default function Home(props: IPropsHome) {
 
       <p>
         <h2>Experience (个人经历)</h2>
-        <table border="1" cellspacing="0">
+        <table border={1} cellSpacing="0">
           {/*<caption>Experience (个人经历)</caption>*/}
           <thead>
             <tr>
@@ -127,7 +127,7 @@ export default function Home(props: IPropsHome) {
           and create a pull request.
         </p>
         <div className="friendly-link">
-          {friendlyLink.map(item => <a href={item.url} target="_blank">{item.name}</a>)}
+          {friendlyLink.map((value) => <a key={value.name} href={value.url} target="_blank">{value.name}</a>)}
         </div>
       </p>
 
