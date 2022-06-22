@@ -150,7 +150,7 @@ export default function Home(props: IPropsHome) {
           Powered by React.js & TypeScript & sass & Webpack, SSR (Server Side Rendering) by React-DOM-Server & koa2, running at CentOS with nginx in Docker, build on GitHub Actions.
         </p>
         <p>
-          Copyright 2020 - 2022 cw1997. Last Update DateTime: 2022-06-22 14:11:46 ( UTC+8 中国标准时间)
+          Copyright 2020 - 2022 cw1997. Last Update DateTime: 2022-06-22 14:11:46 ( UTC+8 中国标准时间 )
         </p>
         <p>
           <a href="https://beian.miit.gov.cn/">赣ICP备15009162号-1</a>
