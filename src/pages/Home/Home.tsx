@@ -28,9 +28,9 @@ export default function Home(props: IPropsHome) {
         </p>
         <p>
           My name is Chang Wei, born on October 6, 1997.
-          Full stack developer, pan-language developer.
-          working for Web front-end development, hobby for embedded development.
-          I hope to make a contribution to the popularization of computer science and electronic.
+          I'm Full stack developer, pan-language developer.
+          Working for Web front-end development, hobby for embedded development.
+          I hope to make a contribution to the popularization of computer science and electronic technology.
         </p>
       </p>
 
@@ -42,8 +42,8 @@ export default function Home(props: IPropsHome) {
           <ul>
             <li>
               开源 CPU 开发，业余开发 <a href="https://github.com/OpenX86">OpenX86</a> 项目，
-              目标为逆向 Intel P6 架构并使用 SystemVerilog 编写对应之 RTL 电路，并且能够在 FPGA 开发板上验证成功。
-              目前进度为 已将 IA-32 基础指令集 的译码器编码完成。还有较多模块待完成。
+              目标为逆向 Intel P6 架构并使用 SystemVerilogHDL 编写对应之 RTL 电路，并且能够在 FPGA 开发板上验证成功。
+              目前进度为 已将 IA-32 基础指令集 的译码器编写完成。还有较多模块待完成。
               （对该项目有兴趣者，欢迎使用本页面上述的联系方式与我取得联系，建议满足 (0 基础 && 初中以上学历 && 对 CPU 研发有兴趣) 之条件者参与）
             </li>
             <li>嵌入式单片机开发，包括 STM32，MSC-51，ESP8266(NodeMCU) 等平台。</li>
@@ -147,7 +147,7 @@ export default function Home(props: IPropsHome) {
           Docker image: <a href="https://hub.docker.com/r/changwei1997/changwei.me">https://hub.docker.com/r/changwei1997/changwei.me</a>
         </p>
         <p>
-          Powered by React.js & TypeScript & sass & Webpack, SSR (Server Side Rendering) by React-DOM-Server & koa2, running at CentOS with nginx in Docker, build on CircleCI.
+          Powered by React.js & TypeScript & sass & Webpack, SSR (Server Side Rendering) by React-DOM-Server & koa2, running at CentOS with nginx in Docker, build on GitHub Actions.
         </p>
         <p>
           Copyright 2020 - 2022 cw1997. Last Update DateTime: 2022-06-22 14:11:46 ( UTC+8 中国标准时间)
