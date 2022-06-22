@@ -11,10 +11,10 @@
     "run:server": "node ./dist/server-index.js",
     "dev:client": "npx webpack serve --config ./webpack.development.config.js",
     "dev:server": "npm run build:server && npm run run:server",
+    "dev": "npm run build:client && npm run build:server && npm run run:server",
     "build:client": "npx webpack --config ./webpack.production.config.js",
     "build:server": "npx webpack --config ./webpack.server.config.js",
-    "build:all": "npm run build:client && npm run build:server",
-    "deploy": "npm run build:client && npm run build:server && npm run run:server"
+    "build:all": "npm run build:client && npm run build:server"
   },
   "engines": {
     "node": "16.15.1",
