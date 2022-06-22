@@ -135,7 +135,13 @@ export default function Home(props: IPropsHome) {
 
       <footer>
         <p>
-          GitHub Actions build status: <a href="https://github.com/cw1997/changwei.me/actions/workflows/node.js.yml"><img src="https://github.com/cw1997/changwei.me/actions/workflows/node.js.yml/badge.svg" /></a>
+          GitHub Actions build status: 
+          <a href="https://github.com/cw1997/changwei.me/actions/workflows/node.js.yml">
+            <img src="https://github.com/cw1997/changwei.me/actions/workflows/node.js.yml/badge.svg" alt="Node.JS CI status" />
+          </a>
+          <a href="https://github.com/cw1997/changwei.me/actions/workflows/codeql-analysis.yml">
+            <img src="https://github.com/cw1997/changwei.me/actions/workflows/codeql-analysis.yml/badge.svg" alt="CodeQL status" />
+          </a>
         </p>
         {/*<p>*/}
         {/*  Circle CI build status: <a href="https://circleci.com/gh/cw1997/changwei.me"><img src="https://circleci.com/gh/cw1997/changwei.me.svg?style=shield" /></a>*/}
