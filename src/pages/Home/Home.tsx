@@ -96,7 +96,7 @@ export default function Home(props: IPropsHome) {
             </tr>
             <tr>
               <td>2018.9 ~ 至今</td><td><a href="https://www.ntust.edu.tw/">NTUST</a> (台湾科技大学)</td><td>Electronic Engineering (电子工程)</td><td>full-time master (全日制硕士)</td>
-              <td>台科大电子研究所乙 1 组(系统组)，研究 telecommunication 移动通信，Free5GC 核心网</td>
+              <td>台科大电子工程研究所丙组(光电及半导体组)，研究光电系统与光纤通信</td>
             </tr>
             <tr>
               <td>2020.10 ~ 2022</td><td><a href="https://pingcap.com">PingCAP</a> (北京平凯星辰科技发展有限公司)</td><td>WEB Front-End (WEB前端开发)</td><td>intern (实习)</td>
