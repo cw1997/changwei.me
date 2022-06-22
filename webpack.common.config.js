@@ -16,7 +16,6 @@ module.exports = {
       '@pages': path.resolve(__dirname, 'src', 'pages'),
     }
   },
-  devtool: 'eval-source-map',
   module: {
     rules: [
       {

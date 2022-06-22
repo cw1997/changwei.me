@@ -24,6 +24,7 @@ module.exports = webpackMerge(webpackCommonConfig, {
   },
   mode: 'production',
   // devtool: 'eval', // 'eval' is not supported by error-overlay-webpack-plugin
+  devtool: 'source-map', // Recommended choice for production builds with high quality SourceMaps.
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',

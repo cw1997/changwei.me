@@ -24,6 +24,7 @@ module.exports = webpackMerge(webpackCommonConfig, {
   },
   mode: "development",
   // devtool: 'eval', // 'eval' is not supported by error-overlay-webpack-plugin
+  devtool: 'eval-source-map',
   devServer: {
     host: "127.0.0.1",
     port: 30000,
