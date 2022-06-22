@@ -150,7 +150,7 @@ export default function Home(props: IPropsHome) {
           Source Code: <a href="https://github.com/cw1997/changwei.me">https://github.com/cw1997/changwei.me</a>
         </p>
         <p>
-          Docker image: <a href="https://hub.docker.com/r/changwei1997/changwei.me">https://hub.docker.com/r/changwei1997/changwei.me</a>
+          Docker image: <a href="https://hub.docker.com/r/changwei1997/changwei-homepage">https://hub.docker.com/r/changwei1997/changwei-homepage</a>
         </p>
         <p>
           Powered by React.js & TypeScript & sass & Webpack, SSR (Server Side Rendering) by React-DOM-Server & koa2, running at CentOS with nginx in Docker, build on GitHub Actions.
