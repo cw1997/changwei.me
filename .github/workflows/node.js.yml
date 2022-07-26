@@ -32,7 +32,7 @@ jobs:
 
     - name: install npm packages with freeze version option
       run: |
-        npm ci
+        npm ci --verbose
 
     - name: build client
       run: |
