@@ -95,7 +95,7 @@ export default function Home(props: IPropsHome) {
               <th>Date (时间)</th><th>Organization (组织机构)</th><th>Position (职位方向)</th><th>Nature (性质)</th><th>Duty (方向与职责)</th>
             </tr>
             <tr>
-              <td>2018.9 ~ 至今</td><td><a href="https://www.ntust.edu.tw/">NTUST</a> (台湾科技大学)</td><td>Electronic Engineering (电子工程)</td><td>full-time master (全日制硕士)</td>
+              <td>2018.9 ~ 至今</td><td><a href="https://www.ntust.edu.tw/">NTUST, National Taiwan University of Science and Technology</a> (National Taiwan University of Science and Technology, 台湾科技大学)</td><td>Electronic Engineering (电子工程)</td><td>full-time master (全日制硕士)</td>
               <td>台科大电子工程研究所丙组(光电及半导体组)，研究光电系统与光纤通信</td>
             </tr>
             <tr>
@@ -103,11 +103,11 @@ export default function Home(props: IPropsHome) {
               <td>负责 <a href="https://pingcap.com/zh">PingCAP 中文官网</a> 和 <a href="https://tidb.io">TiDB 社区</a> 开发</td>
             </tr>
             <tr>
-              <td>2018.9 ~ 2021.8</td><td><a href="https://www.ntust.edu.tw/">NTUST</a> (台湾科技大学)</td><td>Electronic Engineering (电子工程)</td><td>full-time undergraduate (全日制本科)</td>
+              <td>2018.9 ~ 2021.8</td><td><a href="https://www.ntust.edu.tw/">NTUST, National Taiwan University of Science and Technology</a> (台湾科技大学)</td><td>Electronic Engineering (电子工程)</td><td>full-time bachelor (全日制学士)</td>
               <td>毕业设计为 <a href="https://github.com/risc-v-cpu">RISC-V 指令集架构的 CPU 软核设计</a></td>
             </tr>
             <tr>
-              <td>2015.9 ~ 2018.9</td><td><a href="http://www.wspc.edu.cn/">WSPC</a> (武汉船舶职业技术学院)</td><td>Software Technology (软件技术)</td><td>full-time college (全日制专科)</td>
+              <td>2015.9 ~ 2018.9</td><td><a href="http://www.wspc.edu.cn/">WSPC, Wuhan Institute of Shipbuilding Technology</a> (武汉船舶职业技术学院)</td><td>Software Technology (软件技术)</td><td>full-time college (全日制专科)</td>
               <td>Web 全栈开发</td>
             </tr>
           </thead>
@@ -156,7 +156,7 @@ export default function Home(props: IPropsHome) {
           Powered by React.js & TypeScript & sass & Webpack, SSR (Server Side Rendering) by React-DOM-Server & koa2, running at CentOS with nginx in Docker, build on GitHub Actions.
         </p>
         <p>
-          Copyright 2020 - 2022 cw1997. Last Update DateTime: 2022-07-16 00:19:32 ( UTC+8 中国标准时间 )
+          Copyright 2020 - 2022 cw1997. Last Update DateTime: 2022-08-08 01:02:28 ( UTC+8 中国标准时间 )
         </p>
         <p>
           <a href="https://beian.miit.gov.cn/">赣ICP备15009162号-1</a>
