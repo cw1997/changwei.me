@@ -2,7 +2,7 @@
   "name": "changwei-home",
   "version": "1.0.0",
   "description": "www.changwei.me is changwei's homepage",
-  "main": "server/index.js",
+  "main": "server/index.jsx",
   "repository": "https://github.com/cw1997/changwei.me",
   "author": "cw1997",
   "license": "Apache-2.0",
