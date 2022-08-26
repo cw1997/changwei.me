@@ -100,7 +100,7 @@ export default function Home(props: IPropsHome) {
             </tr>
             <tr>
               <td>2020.10 ~ 2022</td><td><a href="https://pingcap.com">PingCAP</a> (北京平凯星辰科技发展有限公司)</td><td>WEB Front-End (WEB前端开发)</td><td>intern (实习)</td>
-              <td>负责 <a href="https://pingcap.com/zh">PingCAP 中文官网</a> 和 <a href="https://tidb.io">TiDB 社区</a> 开发</td>
+              <td>负责开发 <a href="https://pingcap.com/zh">PingCAP 中文官网</a> 和 <a href="https://tidb.io">TiDB 社区</a></td>
             </tr>
             <tr>
               <td>2018.9 ~ 2021.8</td><td><a href="https://www.ntust.edu.tw/">NTUST, National Taiwan University of Science and Technology</a> (台湾科技大学)</td><td>Electronic Engineering (电子工程)</td><td>full-time bachelor (全日制学士)</td>
@@ -135,7 +135,7 @@ export default function Home(props: IPropsHome) {
 
       <footer>
         <p>
-          GitHub Actions build status: 
+          GitHub Actions build status:
           <a href="https://github.com/cw1997/changwei.me/actions/workflows/node.js.yml">
             <img src="https://github.com/cw1997/changwei.me/actions/workflows/node.js.yml/badge.svg" alt="Node.JS CI status" />
           </a>
