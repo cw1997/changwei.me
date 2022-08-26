@@ -95,7 +95,7 @@ export default function Home(props: IPropsHome) {
               <th>Date (时间)</th><th>Organization (组织机构)</th><th>Position (职位方向)</th><th>Nature (性质)</th><th>Duty (方向与职责)</th>
             </tr>
             <tr>
-              <td>2018.9 ~ Now</td><td><a href="https://www.ntust.edu.tw/">NTUST, National Taiwan University of Science and Technology</a> (National Taiwan University of Science and Technology, 台湾科技大学)</td><td>Electronic Engineering (电子工程)</td><td>full-time master (全日制硕士)</td>
+              <td>2018.9 ~ Now</td><td><a href="https://www.ntust.edu.tw/">NTUST, National Taiwan University of Science and Technology</a> (台湾科技大学)</td><td>Electronic Engineering (电子工程)</td><td>full-time master (全日制硕士)</td>
               <td>台科大电子工程研究所丙组(光电及半导体组)</td>
             </tr>
             <tr>
