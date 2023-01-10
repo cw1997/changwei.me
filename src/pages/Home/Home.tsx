@@ -57,7 +57,7 @@ export default function Home(props: IPropsHome) {
           <h3>CS (Computer Science)</h3>
           <ul>
             <li>WEB 全栈开发，泛语言开发者，目前正在进行中的项目请参考本人 GitHub，Username 为 cw1997。</li>
-            <li>WEB Full-stack developer, you can see my project on my GitHub what the username is 'cw1997'</li>
+            <li>WEB Full-stack developer, you can see my projects on GitHub, the username is 'cw1997'</li>
           </ul>
         </p>
 
@@ -95,11 +95,11 @@ export default function Home(props: IPropsHome) {
               <th>Date (时间)</th><th>Organization (组织机构)</th><th>Position (职位方向)</th><th>Nature (性质)</th><th>Duty (方向与职责)</th>
             </tr>
             <tr>
-              <td>2018.9 ~ Now</td><td><a href="https://www.ntust.edu.tw/">NTUST, National Taiwan University of Science and Technology</a> (台湾科技大学)</td><td>Electronic Engineering (电子工程)</td><td>full-time master (全日制硕士)</td>
+              <td>2021.9 ~ Now</td><td><a href="https://www.ntust.edu.tw/">NTUST, National Taiwan University of Science and Technology</a> (台湾科技大学)</td><td>Electronic Engineering (电子工程)</td><td>full-time master (全日制硕士)</td>
               <td>台科大电子工程研究所丙组(光电及半导体组)</td>
             </tr>
             <tr>
-              <td>2020.10 ~ 2022</td><td><a href="https://pingcap.com">PingCAP</a> (北京平凯星辰科技发展有限公司)</td><td>WEB Front-End (WEB前端开发)</td><td>intern (实习)</td>
+              <td>2020.10 ~ 2023</td><td><a href="https://pingcap.com">PingCAP</a> (北京平凯星辰科技发展有限公司)</td><td>WEB Front-End (WEB前端开发)</td><td>intern (实习)</td>
               <td>负责开发 <a href="https://pingcap.com/zh">PingCAP 中文官网</a> 和 <a href="https://tidb.io">TiDB 社区</a></td>
             </tr>
             <tr>
