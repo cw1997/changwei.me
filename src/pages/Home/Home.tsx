@@ -81,7 +81,7 @@ export default function Home(props: IPropsHome) {
           <li>QQ: 867597730</li>
           <li>WeChat: changwei1006</li>
 
-          <li>Email: <a href="mailto:867597730@qq.com">867597730@qq.com</a></li>
+          <li>Email: <a href="mailto:867597730@qq.com">867597730@qq.com (changwei1006@qq.com)</a></li>
           <li>Email: <a href="mailto:changwei1006@gmail.com">changwei1006@gmail.com</a></li>
         </ul>
       </p>
