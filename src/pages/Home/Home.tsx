@@ -23,7 +23,7 @@ export default function Home(props: IPropsHome) {
         <p>
           姓名：昌维，生日（公历）：1997 / 10 / 6。
           全栈开发者，泛语言开发者。
-          职业方向为 WEB 前端开发，业余爱好为嵌入式开发。
+          职业方向为 Web 前端开发，业余爱好为嵌入式开发。
           希望能够为计算机科学与技术相关知识的科普做出微小的贡献。
         </p>
         <p>
@@ -56,8 +56,8 @@ export default function Home(props: IPropsHome) {
         <p>
           <h3>CS (Computer Science)</h3>
           <ul>
-            <li>WEB 全栈开发，泛语言开发者，目前正在进行中的项目请参考本人 GitHub，Username 为 cw1997。</li>
-            <li>WEB Full-stack developer, you can see my projects on GitHub, the username is 'cw1997'</li>
+            <li>Web 全栈开发，泛语言开发者，目前正在进行中的项目请参考本人 GitHub，Username 为 cw1997。</li>
+            <li>Web Full-stack developer, you can see my projects on GitHub, the username is 'cw1997'</li>
           </ul>
         </p>
 
@@ -99,7 +99,7 @@ export default function Home(props: IPropsHome) {
               <td>台科大电子工程研究所丙组(光电及半导体组)</td>
             </tr>
             <tr>
-              <td>2020.10 ~ 2023</td><td><a href="https://pingcap.com">PingCAP</a> (北京平凯星辰科技发展有限公司)</td><td>WEB Front-End (WEB前端开发)</td><td>intern (实习)</td>
+              <td>2020.10 ~ 2023</td><td><a href="https://pingcap.com">PingCAP</a> (北京平凯星辰科技发展有限公司)</td><td>Web Front-End (Web前端开发)</td><td>intern (实习)</td>
               <td>负责开发 <a href="https://pingcap.com/zh">PingCAP 中文官网</a> 和 <a href="https://tidb.io">TiDB 社区</a></td>
             </tr>
             <tr>
